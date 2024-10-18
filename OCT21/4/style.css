@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 60% 40%;
+}
+
+.container div {
+  border: 3px solid #395e89;
+}
+
+#item-1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #4f81bd;
+}
+
+#item-2 {
+  grid-area: 2 3;
+  background-color: #205867;
+}
+
+#item-3 {
+  grid-area: 2 3;
+  background-color: #ffff00;
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(2, 35%) 30%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container div {
+  border: 3px solid #395e89;
+}
+
+#item-1 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #4f81bd;
+}
+
+#item-2 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #ffff00;
+}
+
+#item-3 {
+  grid-area: 3 / 1 / 4 / 3;
+  background-color: #205867;
+}
