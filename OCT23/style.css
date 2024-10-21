@@ -1,3 +1,9 @@
+:root {
+  --primary: #5c65ff;
+  --title: rgb(46, 46, 46);
+  --paragraph: rgb(112, 112, 112);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,19 +14,61 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.top-title {
+  font-size: 26px;
+  font-weight: 200;
+  color: var(--primary);
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--title);
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+p {
+  color: var(--paragraph);
+  font-weight: 200;
 }
 
 nav,
 footer {
-  border: 1px solid black;
-  padding: 10px 50px;
+  padding: 20px 90px;
   width: 60%;
   position: fixed;
 }
 
+#join-now {
+  background-color: var(--primary);
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+}
+
+.description {
+  margin-top: 10px;
+  font-weight: 600;
+}
 /* NAV CSS */
 .logo {
-  width: 80px;
+  width: 70px;
 }
 
 /* FOOTER CSS */
@@ -32,11 +80,11 @@ footer {
   bottom: 0;
 }
 
-button {
-  border-radius: 50px;
-  height: 50px;
-  width: 200px;
-  margin: 10px;
+button,
+input {
+  border-radius: 15px;
+  height: 40px;
+  width: 250px;
 }
 
 .arrow-down {
@@ -45,15 +93,14 @@ button {
 
 /* CONTENT CSS */
 .container {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
+  padding: 20px 90px;
 }
 
 .content-box {
-  background-color: red;
   height: 80vh;
   width: 100%;
   margin: 50px 0px 120px 0px;
@@ -68,7 +115,7 @@ button {
   grid-auto-rows: 100px;
 }
 
-.common-section div {
+.common-section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,10 +129,12 @@ button {
 
 .item-2 {
   grid-area: 2 / 1 / 3 / 2;
+  padding-right: 20px;
 }
 
 .item-3 {
   grid-area: 2 / 2 / 3 / 3;
+  padding-left: 20px;
 }
 
 .new-item {
@@ -99,7 +148,6 @@ button {
 /*first section */
 
 #first > div {
-  border: 1px solid blue;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -114,12 +162,15 @@ button {
 
 /*second section */
 
-#checklists {
+.grid-4 {
   display: grid !important;
-  grid-area: 2 / 2 / 3 / 3;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 105px;
+}
+
+#checklists {
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 140px 0px 50px 100px;
 }
 
 #checklists div {
@@ -139,8 +190,9 @@ button {
   flex-direction: row !important;
 }
 
-.flex-row img {
-  margin-left: 5px;
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 /*fifth section */
@@ -148,4 +200,49 @@ button {
 /*sixth section */
 #section-6 {
   background-image: url("images/particles.svg");
+}
+
+/*registration section*/
+#registration div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#reg-item-1 {
+  grid-area: 1 / 1 / 2 /3;
+}
+
+.bubble {
+  background-image: url("images/bubble.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  padding: 20px 50px 30px 50px;
+  height: 250px;
+  justify-content: space-between;
+}
+
+.bubble div h2,
+.bubble div p {
+  color: white;
+}
+
+#reg-item-2 {
+  grid-area: 2 / 1 / 3 /2;
+}
+
+form button,
+input {
+  margin: auto auto;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#reg-item-3 {
+  grid-area: 2 / 2 / 3 /3;
+  text-align: center;
 }
