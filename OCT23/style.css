@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 0 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav,
+footer {
+  border: 1px solid black;
+  padding: 10px 50px;
+  width: 60%;
+  position: fixed;
+}
+
+/* NAV CSS */
+.logo {
+  width: 80px;
+}
+
+/* FOOTER CSS */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  bottom: 0;
+}
+
+button {
+  border-radius: 50px;
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+}
+
+.arrow-down {
+  width: 30px;
+}
+
+/* CONTENT CSS */
+.container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.content-box {
+  background-color: red;
+  height: 80vh;
+  width: 100%;
+  margin: 50px 0px 120px 0px;
+}
+
+/* common section */
+
+.common-section {
+  display: grid;
+  grid-template-rows: 1.5fr 8fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100px;
+}
+
+.common-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.item-2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.item-3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.new-item {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.common-img {
+  width: 450px;
+}
+
+/*first section */
+
+#first > div {
+  border: 1px solid blue;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+#phone {
+  width: 400px;
+}
+
+/*second section */
+
+#checklists {
+  display: grid !important;
+  grid-area: 2 / 2 / 3 / 3;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 105px;
+}
+
+#checklists div {
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/*third section */
+
+/*fourth section */
+
+.flex-row {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.flex-row img {
+  margin-left: 5px;
+}
+
+/*fifth section */
+
+/*sixth section */
+#section-6 {
+  background-image: url("images/particles.svg");
+}
