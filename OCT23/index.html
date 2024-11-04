@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>alivee</title>
+    <title>alivee cloneee by zhazted</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
-      <img src="images/logo.png" alt="phone" class="logo" />
+      <img src="images/logo.png" id="navbar-logo" />
     </nav>
 
     <div class="container">
       <!-- SECTION 1-->
       <div class="content-box flex-row" id="first">
-        <div>
+        <div id="section-1-item-1">
+          
           <p class="top-title">
             Evolve your <br />
             Facebook live selling
@@ -26,16 +31,17 @@
             Experience
           </h1>
         </div>
-        <div>
+        <div class="image-box">
           <img src="images/first-section-image.png" alt="section-1" id="phone" />
         </div>
       </div>
 
       <!-- SECTION 2-->
-      <div class="content-box common-section">
+      <div class="content-box common-section" id="section-2">
         <div class="item-1">
           <h2>Transform problematic comments into powerful buttons</h2>
         </div>
+        
         <div class="item-2">
           <img
             src="images/second-section-image.png"
@@ -43,48 +49,69 @@
             class="common-img"
           />
         </div>
-        <div class="item-3 grid-4" id="checklists">
-          <div class="flex-row">
-            <img src="images/check-mark-icon.svg" alt="check" class="check" />
-            <p>
-              Seamless and familiar e-commerce shopping <br />
-              experience for your buyers
-            </p>
+        <div class="item-3" id="checklists">
+
+          
+
+          <div>
+
+            <div class="flex-row checklist-top">
+              <img src="images/check-mark-icon.svg" alt="check" class="check" />
+              <p>
+                Seamless and familiar e-commerce shopping experience for your buyers
+              </p>
+            </div>
+            <div class="flex-row checklist-top">
+              <img src="images/check-mark-icon.svg" alt="check" class="check" />
+              <p>No more worrying customers type wrong</p>
+            </div>
+
           </div>
-          <div class="flex-row">
-            <img src="images/check-mark-icon.svg" alt="check" class="check" />
-            <p>No more worrying customers type wrong</p>
+
+
+          <div>
+
+            <div class="flex-row checklist-top">
+              <img src="images/check-mark-icon.svg" alt="check" class="check" />
+              <p>Move on to next product faster during live</p>
+            </div>
+            <div class="flex-row checklist-bottom">
+              <img src="images/check-mark-icon.svg" alt="check" class="check" />
+              <p>Focus 100% on selling product faster</p>
+            </div>
+
+
           </div>
-          <div class="flex-row">
-            <img src="images/check-mark-icon.svg" alt="check" class="check" />
-            <p>Move on to next product faster during live</p>
-          </div>
-          <div class="flex-row">
-            <img src="images/check-mark-icon.svg" alt="check" class="check" />
-            <p>Focus 100% on selling product faster</p>
-          </div>
+          
+          
         </div>
         <div class="new-item">
           <p class="description">
-            Now your live shop can scale to new heights! <br />
-            You can sell 3x-8x more products comparing <br />with any other
+            Now your live shop can scale to new heights!
+            You can sell 3x-8x more products comparing with any other
             systems out there
           </p>
         </div>
     </div>
 
     <!-- SECTION 3-->
-    <div class="content-box common-section">
+    <div class="content-box common-section" id="section-3">
       <div class="item-1">
         <h2>Digital payments enabled, One-click checkout anytime</h2>
       </div>
       <div class="item-2">
-        <h3>Automated payment reconciliation</h3>
-        <p class="description">
-          One quick view on payment status <br>
-          We also allow bank transfers* for sellers who do not wish to use
-          digital payment <br> *PAYNOW recommended
-        </p>
+
+        <div class="section-text-holder">
+
+          <h3>Automated payment reconciliation</h3>
+          <p class="description">
+            One quick view on payment status
+            We also allow bank transfers* for sellers who do not wish to use
+            digital payment *PAYNOW recommended
+          </p>
+
+        </div>
+        
       </div>
       <div class="item-3">
         <img src="images/third-section-image.png" alt="section-3" class="common-img" />
@@ -96,8 +123,8 @@
         
         <div class="item-1">
             <div class="flex-row">
-                <p>aliveecoin</p>
-                <img src="images/alivee-coin-icon.png" alt="alive-coin"  width="11"/>
+                <p class="logo">aliveecoin</p>
+                <img src="images/alivee-coin-icon.png" alt="alive-coin"  width="15" height="15"/>
             </div>
             <h2>FREE loyalty coins for all your customers</h2>
         </div>
@@ -106,28 +133,38 @@
           
         </div>
         <div class="item-3">
+
+          <div class="section-text-holder">
+
             <h3>Each time they buy from you, alivee will reward your buyers with alivee coin</h3>
             <p class="description">
                 All our subscribed sellers* will enjoy this at no cost to
                 sellers. *Only for digital payments
             </p>
+            
+          </div>
+            
         </div>
     </div>
 
     <!-- SECTION 5-->
-    <div class="content-box common-section">
+    <div class="content-box common-section" id="section-5">
         <div class="item-1">
           <h2>All functions to help you GROW your live selling business</h2>
         </div>
         <div class="item-2">
-          <h3>Your success = Our success. Period.</h3>
-          <p class="description">
-            We never stop improving our features, that is our promise to our
-            sellers. We see you as a partner not just a subscriber. More
-            functions will be updated over time. Our team is made up of ex
-            successful tech startup founders
+
+          <div class="section-text-holder">
+            <h3>Your success = Our success. Period.</h3>
+            <p class="description">
+              We never stop improving our features, that is our promise to our
+              sellers. We see you as a partner not just a subscriber. More
+              functions will be updated over time. Our team is made up of ex
+              successful tech startup founders
+            
+            </p>
+          </div>
           
-          </p>
         </div>
         <div class="item-3">
           <img src="images/fifth-section-image.png" alt="section-5" class="common-img" />
@@ -137,7 +174,7 @@
     <!-- SECTION 6-->
     <div class="content-box common-section" id="section-6">
         <div class="item-1">
-          <h2>Digital payments enabled, One-click checkout anytime</h2>
+          <h2>Take the first mover advantage!</h2>
         </div>
         <div class="item-2">
 
@@ -145,46 +182,53 @@
           
         </div>
         <div class="item-3">
-            <h3>Sign-up Bonus</h3>
-            <p class="description">
-                You will also get <strong>5x</strong> more aliveecoins for all your <br />
-                buyers, up to a limited time.
-            </p>
+
+            <div class="section-text-holder">
+              <h3>Sign-up Bonus</h3>
+              <p class="description">
+                  You will also get <strong>5x</strong> more aliveecoins for all your buyers, up to a limited time.
+              </p>
+            </div>
         </div>
     </div>
 
     <!-- SECTION 7-->
-    <div class="content-box grid-4 flex-column" id="registration"> 
-        <div id="reg-item-1">
+    <div class="content-box" id="registration"> 
+        <div  id="reg-item-1">
             <div class="bubble">
                 <div>
                     <h2>COMING ALIVE <br> IN MAY 2021!</h2>
-                    <p>You will also get 5x more aliveecoins for <br> all your buyers, up to a limited time.</p>
+                    <p>You will also get 5x more aliveecoins for all your buyers, up to a limited time.</p>
                 </div>
                 
                 <h3>15 SLOTS ONLY!</h3>
             </div>
         </div>
-        <div id="reg-item-2">
+        <div id="register-item-2">
+          <div  id="reg-item-2">
             <form class="flex-column">
-                <label for="shop-name">Shop Name</label>
+                <label for="shop-name">Shop name</label>
                 <input type="input" name="shop-name">
 
                 <label for="whatsapp">Whatsapp number</label>
                 <input type="input" name="whatsapp">
 
-                <button>Register Interest Now</button>
+                <button id="register">Register Interest Now</button>
                 <p>
-                    We will drop you a whatapp in 24hours to share our <br> special price for the first 15. Or ask us any questions <br> then.
+                    We will drop you a whatapp in 24hours to share our special price for the first 15. Or ask us any questions then.
                 </p>
 
             </form>
+          </div>
+          <div  id="reg-item-3">
+              <h3>Already using some automation systems?</h3>
+              <p>Don't worry! If you’re currently using any existing systems, we are committed to help you to use a MORE POWERFUL product. Get up to 6 months free subscription if you make the switch today!</p>
+          </div>
         </div>
-        <div id="reg-item-3">
-            <h3>Already using some automation <br>systems?</h3>
-            <p>Don't worry! If you’re currently using any existing <br> systems, we are committed to help you to use a MORE <br>POWERFUL product. Get up to <b>6 months</b> free <br>subscription if you make the switch today!</p>
-        </div>
+        
     </div>
+
+    <p>© 2021 alivee pte ltd. Founded in Singapore with ❤️.</p>
 
     <footer>
       <button id="join-now">Join Now</button>
@@ -194,5 +238,6 @@
         class="arrow-down"
       />
     </footer>
+    
   </body>
 </html>
